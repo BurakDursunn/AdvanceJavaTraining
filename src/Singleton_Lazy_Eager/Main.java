@@ -1,7 +1,39 @@
 package Singleton_Lazy_Eager;
 
 public class Main {
-    public static void Main(String[] args){
+    public static void main(String[] args){
 
+
+        new Thread(new Runnable() {
+
+            @Override
+            public void run() {
+                // TODO Auto-generated method stub
+                try {
+                    Thread.sleep(1);
+                } catch (InterruptedException e) {
+                    // TODO: handle exception
+                }
+
+
+                System.out.println("HashCode of LazyCache: " + LazyCache.getInstance().hashCode());
+                System.out.println("HashCode of EagerCache: " + EagerCache.getInstance().hashCode());
+                System.out.println("HashCode of CacheSingleton: " + CacheSingleton.INSTANCE.hashCode());
+
+            }
+        }).start();
+
+        new Thread(new Runnable() {
+
+            @Override
+            public void run() {
+                // TODO Auto-generated method stub
+
+                System.out.println("HashCode of LazyCache: " + LazyCache.getInstance().hashCode());
+                System.out.println("HashCode of EagerCache: " + EagerCache.getInstance().hashCode());
+                System.out.println("HashCode of CacheSingleton: " + CacheSingleton.INSTANCE.hashCode());
+
+            }
+        }).start();
     }
 }
