@@ -7,8 +7,13 @@ public class Main {
                 .addSugar(false)
                 .addMilk(true)
                 .build();
-//zndvsnkvsdlvnsdkl
 
         System.out.println(tea);
+        System.out.println(tea);
+        System.out.println(tea);
+        System.out.println(tea);
+        System.out.println(tea);
+        System.out.println(tea);
+
     }
 }
