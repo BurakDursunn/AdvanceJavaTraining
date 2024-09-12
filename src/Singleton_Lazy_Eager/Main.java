@@ -3,7 +3,6 @@ package Singleton_Lazy_Eager;
 public class Main {
     public static void main(String[] args){
 
-
         new Thread(new Runnable() {
 
             @Override
@@ -14,7 +13,6 @@ public class Main {
                 } catch (InterruptedException e) {
                     // TODO: handle exception
                 }
-
 
                 System.out.println("HashCode of LazyCache: " + LazyCache.getInstance().hashCode());
                 System.out.println("HashCode of EagerCache: " + EagerCache.getInstance().hashCode());

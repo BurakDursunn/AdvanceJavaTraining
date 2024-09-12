@@ -9,11 +9,5 @@ public class Main {
                 .build();
 
         System.out.println(tea);
-        System.out.println(tea);
-        System.out.println(tea);
-        System.out.println(tea);
-        System.out.println(tea);
-        System.out.println(tea);
-
     }
 }

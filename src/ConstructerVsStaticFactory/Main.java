@@ -11,5 +11,6 @@ public class Main {
         SoccerTeam team = SoccerTeam.createWithPlayerNumber(11);
         System.out.println("The team has " + team.getPlayerNumber() + " players.");
 
+        System.out.println(Boolean.valueOf(1>9));
     }
 }
