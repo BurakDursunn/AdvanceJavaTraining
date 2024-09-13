@@ -6,10 +6,13 @@ public class CleanerExample {
     private static final Cleaner cleaner = Cleaner.create();
 
     public static void main(String[] args) {
+
         Resource resource = new Resource();
+
         cleaner.register(resource, resource::cleanup);
-        resource = null; // Nesne kullanılmaz hale getirilir
-        System.gc(); // GC çağrısı: cleaner cleanup() metodunu tetikler
+        resource = null;
+
+        System.gc();
     }
 
     static class Resource {
